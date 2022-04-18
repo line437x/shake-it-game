@@ -1,0 +1,668 @@
+header {
+    background-color: #f3f2ec;
+    top: 0;
+    margin: 0;
+    padding: 0.5vw 0.5vw;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier Prime';
+    font-size: 4vw;
+    color: #252528;
+}
+
+a {
+    color: #252528;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #cbe7f7;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Courier Prime', monospace;
+    font-size: 2vw;
+    gap: 3vw;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1vw;
+    overflow-x: auto;
+    justify-content: space-around;
+}
+
+/*-------------------------------------------------------*/
+
+body {
+    margin: 0;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*------------------------startside-------------------------------*/
+#start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(skaerme/startscreen.svg);
+    background-size: cover;
+}
+
+#play_knap {
+    background-image: url(svg/play.svg);
+    position: absolute;
+    width: 21vw;
+    height: 6.8vw;
+    background-size: cover;
+    top: 17vw;
+    left: 41vw;
+}
+
+#how_to_shake_knap {
+    background-image: url(svg/how_to.svg);
+    position: absolute;
+    width: 17vw;
+    height: 8.6vw;
+    background-size: cover;
+    top: 25vw;
+    left: 42.5vw;
+}
+
+/*--------------------------regelside-----------------------------*/
+
+#start2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(skaerme/regelskaerm.svg);
+    background-color: white;
+    background-size: cover;
+}
+
+#start_game_knap {
+    background-image: url(svg/start_game.svg);
+    position: absolute;
+    width: 27vw;
+    height: 5.03vw;
+    background-size: cover;
+    top: 47vw;
+    left: 68vw;
+}
+
+/*--------------------------gameover-----------------------------*/
+
+#game_over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(skaerme/gameover.svg);
+    background-size: cover;
+    background-color: white;
+}
+
+#play_again1 {
+    background-image: url(svg/play_again.svg);
+    position: absolute;
+    width: 20vw;
+    height: 4.7vw;
+    background-size: cover;
+    top: 36vw;
+    left: 37vw;
+}
+
+#game_over_points {
+    font-family: 'Courier Prime', monospace;
+    font-size: 3vw;
+    left: 40vw;
+    top: 31vw;
+    position: absolute;
+    color: black;
+}
+
+/*--------------------------level complete-----------------------------*/
+
+
+#level_complete {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(skaerme/level_complete.svg);
+    background-size: cover;
+    background-color: white;
+}
+
+#play_again2 {
+    background-image: url(svg/play_again.svg);
+    position: absolute;
+    width: 20vw;
+    height: 4.7vw;
+    background-size: cover;
+    top: 36vw;
+    left: 37vw;
+}
+
+#level_complete_points {
+    font-family: 'Courier Prime', monospace;
+    font-size: 3vw;
+    left: 40vw;
+    top: 31vw;
+    position: absolute;
+    color: black;
+}
+
+/*--------------------------spilleside-----------------------------*/
+
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(svg/spilskaerm.svg);
+    background-size: cover;
+    background-size: cover;
+}
+
+#game_elements {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -15vw;
+    left: 0;
+}
+
+/*--------------------------spil-elementer-----------------------------*/
+
+#citron_container {
+    position: absolute;
+    /*
+    top: -38vw;
+    left: 30vw;
+    */
+}
+
+#citron_sprite {
+    width: 9vw;
+    height: 13vw;
+    background-image: url(svg/citron.svg);
+    background-size: cover;
+}
+
+/*-------------------------------------------------------*/
+
+#lime_container {
+    position: absolute;
+    /*
+    top: -15vw;
+    left: 70vw;
+    */
+}
+
+#lime_sprite {
+    width: 10vw;
+    height: 11vw;
+    background-image: url(svg/lime.svg);
+    background-size: cover;
+}
+
+/*-------------------------------------------------------*/
+
+#cola_container {
+    position: absolute;
+    /*
+    top: -32vw;
+    left: 10vw;
+    */
+}
+
+#cola_sprite {
+    width: 9vw;
+    height: 12vw;
+    background-image: url(svg/cola.svg);
+    background-size: cover;
+}
+
+/*-------------------------------------------------------*/
+
+#gin_container {
+    position: absolute;
+    /*
+    top: -13vw;
+    left: 2vw;
+    */
+}
+
+#gin_sprite {
+    width: 10vw;
+    height: 12vw;
+    background-image: url(svg/gin.svg);
+    background-size: cover;
+}
+
+
+/*-------------------------------------------------------*/
+
+#isterninger_container {
+    position: absolute;
+    /*
+    top: -22vw;
+    left: 23vw;
+    */
+}
+
+#isterninger_sprite {
+    width: 10vw;
+    height: 9vw;
+    background-image: url(svg/isterninger.svg);
+    background-size: cover;
+}
+
+/*-------------------------------------------------------*/
+
+#rom_container {
+    position: absolute;
+    /*
+    top: -15vw;
+    left: 35vw;
+*/
+}
+
+#rom_sprite {
+    width: 11vw;
+    height: 11vw;
+    background-image: url(svg/rom.svg);
+    background-size: cover;
+}
+
+
+/*-------------------------------------------------------*/
+
+#tonic_container {
+    position: absolute;
+    /*
+    top: -30vw;
+    left: 50vw;
+*/
+}
+
+#tonic_sprite {
+    width: 9vw;
+    height: 13vw;
+    background-image: url(svg/tonic.svg);
+    background-size: cover;
+}
+
+/*-------------------------------------------------------*/
+
+#vodka_container {
+    position: absolute;
+    /*
+    top: -17vw;
+    left: 60vw;
+    */
+
+}
+
+#vodka_sprite {
+    width: 10vw;
+    height: 14vw;
+    background-image: url(svg/vodka.svg);
+    background-size: cover;
+}
+
+
+/*-------------------------------------------------------*/
+
+#game_ui {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/*-------------------------------------------------------*/
+
+#score_board {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 10vw;
+    height: 7.08vw;
+    background-image: url(svg/points.svg);
+    background-size: cover;
+}
+
+#score {
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    top: 2vw;
+    left: 4vw;
+    position: absolute;
+}
+
+/*-------------------------------------------------------*/
+
+/*
+#time_board_container {
+    position: absolute;
+    top: 20vw;
+    left: 84vw;
+}
+
+#time_board_sprite {
+    width: 15vw;
+    height: 33.51vw;
+    background-image: url(svg/barometer_15_sek.svg);
+    background-size: cover;
+}
+*/
+
+/*-------------------------------------------------------*/
+/*
+#lyd_off_on {
+    position: absolute;
+}
+
+#lyd_off {
+    background-image: url(svg/lydlos.svg);
+    background-size: cover;
+    position: absolute;
+    width: 5vw;
+    height: 4.5vw;
+    top: 3vw;
+    left: 90vw;
+}
+
+#lyd_on {
+    background-image: url(svg/lyd.svg);
+    background-size: cover;
+    position: absolute;
+    width: 5vw;
+    height: 4.5vw;
+    top: 3vw;
+    left: 90vw;
+}
+*/
+
+
+
+/*-------------------------------------------------------*/
+
+
+#energy_board {
+    position: relative;
+    background-image: url(svg/liv_boks.svg);
+    top: 2vw;
+    left: 79vw;
+    width: 20vw;
+    height: 7.45vw;
+    background-size: cover;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 1.2vw;
+}
+
+#energy_board img {
+    width: 5vw;
+    height: 4vw;
+    background-size: cover;
+    align-content: center;
+}
+
+/*-------------------------------------------------------*/
+
+.falling {
+    animation-name: falling_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes falling_kf {
+    from {
+        transform: translateY(-20vw);
+    }
+
+    to {
+        transform: translateY(70vw);
+    }
+}
+
+/*-------------------------------------------------------*/
+
+.forsvind {
+    animation-name: forsvind_kf;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+    100% {
+        transform: scale(0);
+    }
+}
+
+/*-------------------------------------------------------*/
+
+.forsvind_roter {
+    animation-name: forsvind_roter_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes forsvind_roter_kf {
+    100% {
+        transform: scale(0) rotate(360deg);
+    }
+}
+
+/*-------------------------------------------------------*/
+
+.pos1 {
+    /*    top: 38vw;*/
+    left: 30vw;
+}
+
+.pos2 {
+    /*    top: 17vw;*/
+    left: 60vw;
+}
+
+.pos3 {
+    /*    top: 4vw;*/
+    left: 70vw;
+}
+
+.pos4 {
+    /*    top: 32vw;*/
+    left: 10vw;
+}
+
+.pos5 {
+    /*    top: 13vw;*/
+    left: 2vw;
+}
+
+.pos6 {
+    /*    top: 22vw;*/
+    left: 23vw;
+}
+
+.pos7 {
+    /*    top: 7vw;*/
+    left: 35vw;
+}
+
+.pos8 {
+    /*    top: 30vw;
+    */
+    left: 50vw;
+}
+
+
+/*-------------------------------------------------------*/
+.hide {
+    filter: opacity(10%);
+}
+
+/*-------------------------------------------------------*/
+
+.skjul {
+    display: none;
+}
+
+/*-------------------------------------------------------*/
+
+.delay1 {
+    animation-delay: 1s;
+}
+
+
+.delay2 {
+    animation-delay: 2s;
+}
+
+
+.delay3 {
+    animation-delay: 3s;
+}
+
+/*-------------------------------------------------------*/
+
+.speed1 {
+    animation-duration: 3.5s;
+}
+
+.speed2 {
+    animation-duration: 2.2s;
+}
+
+.speed3 {
+    animation-duration: 4s;
+}
+
+.speed4 {
+    animation-duration: 1.8s;
+}
+
+/*-------------------------------------------------------*/
+
+#time_board_container {
+    position: absolute;
+    width: 7vw;
+    height: 30vw;
+    border: 0.2vw solid #636360;
+    top: 16vw;
+    left: 86vw;
+
+}
+
+#time_board_sprite {
+    width: 7vw;
+    height: 30vw;
+    background-color: green;
+    transform-origin: center bottom;
+}
+
+.time {
+    animation-name: time_kf;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes time_kf {
+    0% {
+        transform: scaleY(1);
+        background-color: green;
+    }
+
+    25% {
+        background-color: greenyellow;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: orange;
+    }
+
+    100% {
+        transform: scaleY(0);
+        background-color: red;
+    }
+}
+
+/*-------------------------------------------------------*/
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.pulse2 {
+    animation-name: pulse2_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes pulse2_kf {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

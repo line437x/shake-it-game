@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAKE IT</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>SHAKE IT</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="spil.html">Spil</a></li>
+                <li><a href="asset.html">Asset</a></li>
+                <li><a href="ide.html">Ide</a></li>
+                <li><a href="doku.html">Dokumentation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+            <div id="game_elements">
+                <div id="citron_container">
+                    <div id="citron_sprite"></div>
+                </div>
+                <div id="lime_container">
+                    <div id="lime_sprite"></div>
+                </div>
+                <div id="cola_container">
+                    <div id="cola_sprite"></div>
+                </div>
+                <div id="gin_container">
+                    <div id="gin_sprite"></div>
+                </div>
+                <div id="isterninger_container">
+                    <div id="isterninger_sprite"></div>
+                </div>
+                <div id="rom_container">
+                    <div id="rom_sprite"></div>
+                </div>
+                <div id="tonic_container">
+                    <div id="tonic_sprite"></div>
+                </div>
+                <div id="vodka_container">
+                    <div id="vodka_sprite"></div>
+                </div>
+            </div>
+            <div id="game_foreground"></div>
+            <div id="game_ui">
+                <div id="score_board">
+                    <div id="score">0</div>
+                </div>
+
+                <div id="energy_board">
+                    <div id="liv1"><img src="svg/fyldt_hjerte.svg" alt="hjerte">
+                    </div>
+                    <div id="liv2"><img src="svg/fyldt_hjerte.svg" alt="hjerte">
+                    </div>
+                    <div id="liv3"><img src="svg/fyldt_hjerte.svg" alt="hjerte">
+                    </div>
+                </div>
+                <div id="time_board_container">
+                    <div id="time_board_sprite"></div>
+                </div>
+                <div id="lyd_off_on">
+                    <div id="lyd_off"></div>
+                    <div id="lyd_on"></div>
+                </div>
+            </div>
+        </div>
+        <div id="start">
+            <div id="play_knap"></div>
+            <div id="how_to_shake_knap"></div>
+        </div>
+        <div id="start2">
+            <div id="start_game_knap"></div>
+        </div>
+        <div id="game_over">
+            <div id="game_over_points"></div>
+            <div id=play_again1></div>
+        </div>
+        <div id="level_complete">
+            <div id="level_complete_points"></div>
+            <div id=play_again2></div>
+        </div>
+    </div>
+    <div id="sounds">
+        <audio src="sounds/isterning.mp3" id="klir"></audio>
+        <audio src="sounds/baggrundsmusik.mp3" id="baggrundsmusik"></audio>
+        <audio src="sounds/burp.mp3" id="burp"></audio>
+        <audio src="sounds/nice.mp3" id="nice"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

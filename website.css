@@ -1,0 +1,106 @@
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+}
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 95vw) 1fr;
+}
+
+.index > section {
+    grid-column: 2/3;
+    margin-top: 2vw;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Courier Prime';
+    font-size: 4vw;
+    color: #252528;
+}
+
+h2 {
+    font-family: 'Courier Prime';
+    font-size: 1.5vw;
+    color: #252528;
+}
+
+p {
+    font-family: 'Courier Prime';
+    font-size: 1.2vw;
+    color: #252528;
+
+}
+
+header {
+    background-color: #f3f2ec;
+    top: 0;
+    margin: 0;
+    padding: 0.5vw 0.5vw;
+}
+
+a {
+    color: #252528;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #cbe7f7;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Courier Prime', monospace;
+    font-size: 2vw;
+    gap: 3vw;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1vw;
+    overflow-x: auto;
+    justify-content: space-around;
+}
+
+
+section {
+    box-shadow: 0 0.1vw 0.6vw black;
+    padding: 0.5vw;
+    padding-bottom: 2vw;
+}
+
+#spil_elementer {
+    background-color: #cbe7f7;
+}
+
+.smaa_billeder img {
+    width: 10vw;
+    height: auto;
+}
+
+.smaa_billeder {
+    display: flex;
+    gap: 5vw;
+}
+
+.store_billeder img {
+    width: 50vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0.2vw 0.5vw black;
+}
+
+#forside_billede {
+    width: 70vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2vw;
+}
